@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>YubiOn.Fss.Sdk</RootNamespace>
+    <AssemblyName>YubiOn.Fss.Sdk</AssemblyName>
+
+    <!-- Package Information -->
+    <PackageId>YubiOn.Fss.Sdk</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>SOFTGIKEN Co.,Ltd</Authors>
+    <Company>SOFTGIKEN Co.,Ltd</Company>
+    <Description>YubiOn FIDO2Server Service SDK for .NET. Easily integrate FIDO2 / WebAuthn passkey authentication into .NET applications.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/YubiOn-Dev-Team/yubion-fido2-server-sdk-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/YubiOn-Dev-Team/yubion-fido2-server-sdk-dotnet</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>yubion;fido2;passkey;webauthn;security;authentication;fss</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
