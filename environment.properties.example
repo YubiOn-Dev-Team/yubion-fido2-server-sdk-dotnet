@@ -1,0 +1,44 @@
+# ==============================================================================
+# YubiOn FSS .NET SDK - Test Environment Configuration Template
+# ==============================================================================
+# Instructions:
+# 1. Copy this file to "environment.properties" in the project root or test directory.
+# 2. Fill in the values with your actual test RP and API credentials.
+# 3. "environment.properties" is ignored by git (.gitignore) to prevent leaking secrets.
+#
+# Alternatively, you can configure these as environment variables (e.g. FSS_TEST_RP_ID).
+# ==============================================================================
+
+# API Endpoint (Optional: defaults to https://fss-app.yubion.com/api/)
+# FSS_TEST_ENDPOINT=https://fss-app.yubion.com/api/
+
+# Test RP ID (WARNING: Data under this RP will be modified/deleted during testing. Do not use production!)
+FSS_TEST_RP_ID=your-test-rp.example.com
+
+# ------------------------------------------------------------------------------
+# Nonce-based Signature Authentication (ECDSA P-256 PKCS#8 in Base64URL)
+# ------------------------------------------------------------------------------
+FSS_TEST_NONCE_API_AUTH_ID=your-nonce-api-auth-id
+FSS_TEST_NONCE_CORRECT_API_SECRET_KEY=YOUR_BASE64URL_ENCODED_PKCS8_EC_PRIVATE_KEY
+FSS_TEST_NONCE_INCORRECT_API_SECRET_KEY=DUMMY_INCORRECT_BASE64URL_KEY_FOR_FAILURE_TESTING
+
+# ------------------------------------------------------------------------------
+# Datetime-based Signature Authentication (ECDSA P-256 PKCS#8 in Base64URL)
+# ------------------------------------------------------------------------------
+FSS_TEST_DATETIME_API_AUTH_ID=your-datetime-api-auth-id
+FSS_TEST_DATETIME_CORRECT_API_SECRET_KEY=YOUR_BASE64URL_ENCODED_PKCS8_EC_PRIVATE_KEY
+FSS_TEST_DATETIME_INCORRECT_API_SECRET_KEY=DUMMY_INCORRECT_BASE64URL_KEY_FOR_FAILURE_TESTING
+
+# ------------------------------------------------------------------------------
+# Access Key Authentication (Pre-shared Key)
+# ------------------------------------------------------------------------------
+FSS_TEST_ACCESSKEY_API_AUTH_ID=your-accesskey-api-auth-id
+FSS_TEST_ACCESSKEY_CORRECT_API_SECRET_KEY=your-correct-access-key-secret
+FSS_TEST_ACCESSKEY_INCORRECT_API_SECRET_KEY=dummy-incorrect-access-key-secret
+
+# ------------------------------------------------------------------------------
+# License Failure Test (RP with Free plan or expired license)
+# ------------------------------------------------------------------------------
+FSS_TEST_RP_ID_FOR_LICENSE_TEST=your-license-test-rp.example.com
+FSS_TEST_API_AUTH_ID_FOR_LICENSE_TEST=your-license-test-api-auth-id
+FSS_TEST_API_SECRET_KEY_FOR_LICENSE_TEST=YOUR_BASE64URL_ENCODED_PKCS8_EC_PRIVATE_KEY

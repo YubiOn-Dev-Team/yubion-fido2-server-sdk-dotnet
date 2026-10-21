@@ -1,0 +1,65 @@
+# Build Results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Bb]uild/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+artifacts/
+
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.suo
+sample/.github/
+**/copilot-instructions.md
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Test Results
+TestResults/
+[Tt]est[Rr]esult*/
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.assets.json
+*.nupkg
+*.snupkg
+
+# Sample & Temp directories (Do not commit _sample as specified)
+_sample/
+initial_instructions.txt
+
+# Environment & Secret files
+.env
+.env.*
+environment.properties
+appsettings.*.local.json
+local.settings.json
+sample/**/appsettings.json
+
+# OS files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
